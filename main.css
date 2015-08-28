@@ -4,7 +4,7 @@
 
 body {
     width: 100%;
-    background-color: #f8f8f8;
+    background-color: #fff;
     margin: 0px;
     min-width: 320px;
 }
@@ -21,26 +21,37 @@ body {
     display: inline-block;
 }
 
-.header_table, .header_table tr, .header_table td {
+.desktop_header_table, .desktop_header_table tr, .desktop_header_table td {
     max-height: 70px;
     padding: 0px;
 }
 
-.header_table {
+.desktop_header_table {
     width: 100%;
+}
+
+.mobile_header_table {
+    display: none;
 }
 
 .header a {
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1em;
     max-height: 70px;
-    vertical-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: Serif;
+}
+
+.header a:link, .header a:visited, .header a:hover, .header a:active {
+    text-decoration: none;
+}
+
+.header a:hover, .header a:active {
+    color: #b0b0b0;
 }
 
 .header h1 {
-    float: center;
     margin: 0px;
     text-align: center;
     color: #fff;
@@ -63,19 +74,76 @@ body {
  **********************************************************/
 
 .content {
-    text-align: center;
     display: inline-block;
-    border: 1px solid #808080;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
+    width: 100%;
+    text-align: center;
 }
 
 .content_body {
     width: 1360px;
     margin: auto;
+    background-color: #f4f4f4;
     display: inline-block;
+    text-align: left;
 }
 
 /**********************************************************
  ********************* MEDIA QUERIES **********************
  **********************************************************/
+
+@media (max-width: 1400px) {
+    .content_body {
+        width: 980px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content_body {
+        width: 740px;
+    }
+    .desktop_header_table {
+        display: none;
+    }
+    .mobile_header_table {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    .content_body {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 640px) {
+    .content_body {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content_body {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 360px) {
+    .content_body {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/**********************************************************
+ ************************ OTHER ***************************
+ **********************************************************/
+/* Include this in the first line to import Open Sans 
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+*/
