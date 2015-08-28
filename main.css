@@ -1,11 +1,81 @@
+/**********************************************************
+ *********************** COMPONENTS ***********************
+ **********************************************************/
+
 body {
     width: 100%;
     background-color: #f8f8f8;
     margin: 0px;
+    min-width: 320px;
 }
 
+/**********************************************************
+ ************************ HEADER **************************
+ **********************************************************/
+
 .header {
-    height: 60px;
+    height: 70px;
+    max-height: 70px;
     width: 100%;
-    background-color: #404040;
+    background-color: #202020;
+    display: inline-block;
 }
+
+.header_table, .header_table tr, .header_table td {
+    max-height: 70px;
+    padding: 0px;
+}
+
+.header_table {
+    width: 100%;
+}
+
+.header a {
+    color: #fff;
+    font-size: 1.1em;
+    max-height: 70px;
+    vertical-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header h1 {
+    float: center;
+    margin: 0px;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header_menu_left {
+    /* not needed */
+    text-align: left;
+}
+
+.header_menu_right {
+    text-align: right;
+}
+
+
+/**********************************************************
+ *********************** CONTENT **************************
+ **********************************************************/
+
+.content {
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #808080;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.content_body {
+    width: 1360px;
+    margin: auto;
+    display: inline-block;
+}
+
+/**********************************************************
+ ********************* MEDIA QUERIES **********************
+ **********************************************************/
