@@ -1,3 +1,5 @@
+/* Home */
+
 /**********************************************************
  *********************** COMPONENTS ***********************
  **********************************************************/
@@ -28,6 +30,7 @@ body {
 .desktop_header_table {
     width: 100%;
     background-color: #0099CC;
+    height: 62px;
 }
 
 .mobile_header_table {
@@ -71,12 +74,38 @@ body {
     text-align: right;
 }
 
-.mobile_header_button {
-    text-align: right;
+.mobile_header_table h1 {
+    padding-left: 15px;
+    text-align: left;
 }
 
-.mobile_header_table h1 {
-    padding-left: 25px;
+.mobile_header_button {
+    right: 10px;
+    top: 9px;
+    position: absolute;
+}
+
+.mobile_header_button_style {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 2.2em;
+    padding: 0;
+    line-height: 0;
+    font-family: Arial;
+}
+
+.mobile_header_button_style:hover {
+    color: #0000CC;
+    border-color: #0000CC;
+}
+
+.mobile_header_button_style:active {
+    color: #000080;
+    border-color: #000080;
 }
 
 
@@ -137,29 +166,21 @@ body {
 
 @media (max-width: 768px) {
     .content_body {
-        width: 96%;
-        margin-left: 2%;
-        margin-right: 2%;
-    }
-}
-
-@media (max-width: 640px) {
-    .content_body {
         width: 95%;
         margin-left: 2.5%;
         margin-right: 2.5%;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
     .content_body {
-        width: 94%;
-        margin-left: 3%;
-        margin-right: 3%;
+        width: 93%;
+        margin-left: 3.5%;
+        margin-right: 3.5%;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     .content_body {
         width: 90%;
         margin-left: 5%;
@@ -167,9 +188,16 @@ body {
     }
 }
 
+@media (max-width: 360px) {
+    .content_body {
+        width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+}
 /**********************************************************
  ************************ OTHER ***************************
  **********************************************************/
 /* Include this in the first line to import Open Sans 
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
-*/
+ */
