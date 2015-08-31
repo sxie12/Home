@@ -67,11 +67,22 @@ body {
 
 .header_menu_left {
     /* not needed */
-    text-align: left;
+    text-align: left; 
+}
+
+.header_menu_left, .header_menu_right {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.header_menu_left li, .header_menu_right li {
+    display: inline;
 }
 
 .header_menu_right {
     text-align: right;
+    padding-left: 0px;
+    padding-right: 20px;
 }
 
 .mobile_header_table h1 {
