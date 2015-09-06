@@ -6,13 +6,13 @@
 
 body {
     width: 100%;
-    background-color: #0099CC;
+    background-color: #09C;
     margin: 0px;
     min-width: 320px;
 }
 
 /**********************************************************
- ************************ HEADER **************************
+ ******************** DESKTOP HEADER **********************
  **********************************************************/
 
 .header {
@@ -29,7 +29,7 @@ body {
 
 .desktop_header_table {
     width: 100%;
-    background-color: #0099CC;
+    background-color: #09C;
     height: 62px;
 }
 
@@ -38,10 +38,13 @@ body {
 }
 
 .header a {
-    color: #fff;
+    color: #FFF;
     font-size: 1em;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 84px;
+    text-align: center;
+    outline: none;
 }
 
 .header a:link, .header a:visited, .header a:hover, .header a:active {
@@ -49,7 +52,7 @@ body {
 }
 
 .header a:hover {
-    color: #0000CC;
+    color: #00C;
 }
 
 /* Currently not in use */
@@ -58,32 +61,31 @@ body {
 }
 
 .header h1 {
-    margin: 0px;
+    margin: 0;
     text-align: center;
-    color: #fff;
+    color: #FFF;
     padding-top: 10px;
     padding-bottom: 8px;
 }
 
-.header_menu_left {
-    /* not needed */
-    text-align: left; 
-}
-
 .header_menu_left, .header_menu_right {
+    padding: 0px;
     list-style-type: none;
-    padding-left: 20px;
+    height: 58px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: inline-block;
+    line-height: 3.8;
 }
 
-.header_menu_left li, .header_menu_right li {
-    display: inline;
+.header_menu_left li, .header_menu_right li, .header_menu_left li a, .header_menu_right li a {
+    display: inline-block;
+    height: 62px;
 }
 
-.header_menu_right {
-    text-align: right;
-    padding-left: 0px;
-    padding-right: 20px;
-}
+/**********************************************************
+ ******************** MOBILE HEADER ***********************
+ **********************************************************/
 
 .mobile_header_table h1 {
     padding-left: 15px;
@@ -99,10 +101,10 @@ body {
 .mobile_header_button_style {
     height: 40px;
     width: 40px;
-    border: 2px solid #fff;
+    border: 2px solid #FFF;
     border-radius: 5px;
     background-color: transparent;
-    color: #fff;
+    color: #FFF;
     font-size: 2.2em;
     padding: 0;
     line-height: 0;
@@ -110,8 +112,8 @@ body {
 }
 
 .mobile_header_button_style:hover {
-    color: #0000CC;
-    border-color: #0000CC;
+    color: #00C;
+    border-color: #00C;
 }
 
 .mobile_header_button_style:active {
@@ -134,22 +136,23 @@ body {
 .content_body {
     border-top-width: 1px;
     border-top-style: solid;
-    border-top-color: #f8f8f8;
+    border-top-color: #F8F8F8;
     width: 1360px;
     margin: auto;
     display: inline-block;
     text-align: left;
 }
 
-.content_body_text {
-    padding-left: 10px;
-    padding-top: 100px;
-}
-
-.content_body_text h1 {
-    font-size: 2.7em;
+.content_body h1 {
     text-align: center;
     color: #000060;
+    margin-top: 92px;
+    margin-bottom: 90px;
+}
+
+.content_body_text {
+    padding-left: 20px;
+    padding-right: 15px;
 }
 
 /**********************************************************
@@ -170,8 +173,18 @@ body {
         display: none;
     }
     .mobile_header_table {
-        display: inline;
+        display: inline-block;
         width: 100%;
+background-color: #0099CC;
+        height: 62px;
+    }
+    .content_body h1 {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .content_body_text {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
